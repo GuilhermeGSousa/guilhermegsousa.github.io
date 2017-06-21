@@ -34,18 +34,18 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #4717F6;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #fff;
-$background-alt: #f2f2f5;
+$background: #0E0B16;
+$background-alt: #E7DFDD;
 
 // Define border colors
-$border: #dcd9d9;
+$border: $background;
 
 // Define text colors
-$heading: #374054;
+$heading: #E7DFDD;
 $text: #74808a;
 
 /*
@@ -448,7 +448,7 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
-
+    background: $background;
     h2 {
         color: $heading;
     }
@@ -469,7 +469,7 @@ footer {
     padding: 50px 15px;
     text-align: center;
     border-bottom: 1px solid $border;
-
+    background: $background;
     h2 {
         color: $heading;
     }
@@ -512,11 +512,11 @@ footer {
     padding: 15px;
     border-radius: 3px;
     text-align: left;
-
+    background: $background-alt;
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: $base-color;
         display: inline-block;
         margin: 0;
     }
@@ -580,7 +580,7 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
-
+    background: $background;
     h2 {
         color: $heading;
         margin-bottom: 50px;
@@ -634,7 +634,7 @@ footer {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
-
+    background: $background;
     h2 {
         color: $heading;
         margin-bottom: 50px;
@@ -646,7 +646,7 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fff;
+    background: $background-alt;
     border-radius: 4px;
 }
 
@@ -664,7 +664,7 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: $background;
         margin: 0 0 15px 0;
     }
 
@@ -688,7 +688,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
-
+    background: $background;
     h2 {
         color: $heading;
         margin-bottom: 50px;
@@ -706,7 +706,7 @@ footer {
         margin: 7px;
         padding: 5px 10px;
         color: $heading;
-        background: darken($background-alt, 5%);
+        background: darken(#A239CA, 0%);
         list-style: none;
         cursor: default;
         font-size: 1.2em;
