@@ -42,6 +42,10 @@
             <li>
                 <a href="#contact">Contact</a>
             </li>
+            
+            <li>
+                <a href="#personal-assistant">Personal Assistant</a>
+            </li>
         </ul>
     </header>
     <!-- End header -->
@@ -231,7 +235,25 @@
         <!-- End #contact-form -->
     </div>
     <!-- End #contact -->
-
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">Personal Assistant</h2>
+                    <h3>Ask me anything!</h3>
+                    <iframe
+                        width="350"
+                        height="430"
+                        src="https://console.api.ai/api-client/demo/embedded/cenas">
+                    </iframe>
+                </div>
+                <input id="input" type="text">
+                <button id="answer" class="btn" onclick="onClick()">Answer</button>
+                <h5 id="output"></h5>
+            </div>
+        </div>
+    </div>
+    <!-- End Personal Assistant -->
     <footer>
         <div class="container">
             <div class="row">
@@ -270,6 +292,7 @@
     <!-- End footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="js/ai.js"></script>
 </body>
 
 </html>
