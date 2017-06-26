@@ -16,10 +16,9 @@ document.getElementById("input").addEventListener("keyup", function(event){
 function onClick(){
     var textInput = document.getElementById("input");
     if(textInput.value != ""){
-        document.getElementById("response").innerHTML = document.getElementById("response").innerHTML + textInput.value + "\n";
+        send();
         textInput.value = "";
         document.getElementById("response").scrollTop = document.getElementById("response").scrollHeight;
-        send();
     }
 }
 
