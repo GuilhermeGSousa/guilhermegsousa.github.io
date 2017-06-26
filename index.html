@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="libs/lib-ai.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -221,7 +223,6 @@
         </ul>
     </div>
     <!-- End #skills -->
-
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
@@ -236,20 +237,13 @@
     </div>
     <!-- End #contact -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">Personal Assistant</h2>
-                    <h3>Ask me anything!</h3>
-                    <iframe
-                        width="350"
-                        height="430"
-                        src="https://console.api.ai/api-client/demo/embedded/cenas">
-                    </iframe>
-                </div>
+        <h2>Personal Assistant</h2>
+        <h3>Ask me anything!</h3>
+        <div id="contact-form">
+            <div>
                 <input id="input" type="text">
-                <button id="answer" class="btn" onclick="onClick()">Answer</button>
-                <h5 id="output"></h5>
+                <button type="button" id="answer" onclick="onClick()">Answer</button>
+                <textarea id="response" readonly></textarea>
             </div>
         </div>
     </div>
@@ -290,7 +284,6 @@
         </div>
     </footer>
     <!-- End footer -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="js/ai.js"></script>
 </body>
