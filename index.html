@@ -43,10 +43,6 @@
             <li>
                 <a href="#contact">Contact</a>
             </li>
-            
-            <li>
-                <a href="#personal-assistant">Personal Assistant</a>
-            </li>
         </ul>
     </header>
     <!-- End header -->
@@ -222,6 +218,7 @@
         </ul>
     </div>
     <!-- End #skills -->
+    <!--
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
@@ -233,16 +230,23 @@
             </form>
         </div>
         <!-- End #contact-form -->
-    </div>
+    </div> 
     <!-- End #contact -->
     <div id="contact">
         <h2>Personal Assistant</h2>
-        <h3>Ask me anything!</h3>
+        <h3>Wish to contact me or have any questions? I'll let you talk to my assistant</h3>
         <div id="contact-form">
             <div>
                 <input id="input" type="text">
                 <button type="button" id="answer" onclick="onClick()">Answer</button>
                 <textarea id="response" readonly></textarea>
+                        <div id="contact-form">
+            <form method="POST" id="contact-form" action="https://formspree.io/guilherme.sousa1994@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="hidden" name="_replyto" id="reply">
+                <input type="hidden" name="message" id="message">
+            </form>
+        </div>
             </div>
         </div>
     </div>
