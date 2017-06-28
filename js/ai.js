@@ -52,7 +52,7 @@ function send() {
             setResponse("Internal Server Error");
         }
     });
-    setResponse("Loading...");
+    setResponse("Thinking...");
 }
 
 function setResponse(val) {
