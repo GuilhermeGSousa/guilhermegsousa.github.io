@@ -42,9 +42,6 @@
             <li>
                 <a href="#skills">Skills</a>
             </li>
-            <li>
-                <a href="#contact">Personal Assistant</a>
-            </li>
         </ul>
     </header>
     <!-- End header -->
@@ -52,8 +49,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Guilherme Sousa</h1>
-            <h2>Aerospace Engineer</h2>
-            <a href="https://github.com/GuilhermeGSousa/CV/raw/master/CV%20-%20English/CV-Guilherme%20Sousa.pdf" class="btn-rounded-white">Download Resume</a>
+            <h2>Data Scientist/Software Developer</h2>
         </div>
         <!-- End #lead-content -->
 
@@ -76,7 +72,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Hi, I'm Guilherme, an aerospace engineering student from Lisbon, passionate about software solutions with aeronautical and space applications. I want to make lives better and safer through coding. Get to know me and some of my projects or <a href="#contact">get in touch!</a>
+                        Hi, I'm Guilherme, an aerospace engineering student from Lisbon, passionate about software solutions and machine learning. I want to make lives better and safer through coding. Get to know me and some of my projects or <a href="#contact">get in touch!</a>
                     </p>
                 </div>
             </div>
@@ -85,14 +81,48 @@
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
+        <h2 class="heading">Experiences</h2>
         <div id="experience-timeline">
-            <div data-date="Now">
+            <div data-date="March 2019 - August 2019">
+                <h3>R&D Engineer</h3>
+                <h4>Liberty Rider</h4>
+                <p>
+                    Responsible for using data analysis and Machine Learning to study and deploy improvements to Liberty Rider's accident detection solution.
+                </p>
+            </div>
+            <div data-date="May 2018 - February 2019">
+                <h3>Data Scientist Consultant</h3>
+                <h4>Airbus/SII</h4>
+                <p>
+                    As a member of the SII Big Data team, worked as a data scientist consultant on two separate Airbus projects
+                    <ul>
+                        <li><b>Free Maintenance</b> Solution using Voice Recognition, Voice Synthesis and Natural Language Processing to facilitate the workflow of maintenance operators</li>
+                        <li><b>ATA42 Log Analysis</b> Framework for data processing of maintenance logs for root cause prediction and automatic analysis</li>
+                    </ul>
+                </p>
+            </div>
+            <div data-date="October 2017 - May 2018">
+                <h3>Software Developer</h3>
+                <h4>THALES Avionics/SII</h4>
+                <p>
+                    Worked as an embedded software developer of the Flight Warning System for the Sukhoi SuperJet and ATR models.
+    
+                </p>
+            </div>
+            <div data-date="October 2017 - May 2018">
+                <h3>Seoftware Developer</h3>
+                <h4>THALES Avionics/SII</h4>
+                <p>
+                    Worked as an embedded software developer of the Flight Warning System for the Sukhoi SuperJet and ATR models.
+    
+                </p>
+            </div>
+            <div data-date="February 2017 – June 2017">
                 <h3>ENAC - Toulouse</h3>
                 <h4>MSc research internship</h4>
                 <p>
                     Developing at the MAIAA (Applied Mathematics, Computer Science and Automation) department of ENAC a non-linear controller for commercial aircraft using neural networks and machine learning, allowing it to follow 4D trajectories, facilitating air traffic control. You can read my thesis <a href="https://github.com/GuilhermeGSousa/Thesis/blob/master/Thesis.pdf">here</a>.
-
+    
                 </p>
             </div>
             <div data-date="February 2016 – June 2016">
@@ -109,9 +139,9 @@
                     <a href="http://www.pro-drone.eu/">ProDrone</a> is an amazing portuguese startup, making wind energy competitive by using automation to improve wind turbine inspections. I worked with a team responsible for the implementation of a control algorithm to automate a UAV to make such inspections. <a href="https://www.youtube.com/watch?v=avhL_ZuOWUg&feature=youtu.be">Here</a> is the final result of my internship.
                 </p>
             </div>
-
-
-
+    
+    
+    
         </div>
     </div>
     <!-- End #experience -->
@@ -120,7 +150,7 @@
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>Instituto Superior Técnico of Lisbon</h3>
-            <span class="education-date">Sept 2016 - Now</span>
+            <span class="education-date">Sept 2016 - June 2017</span>
             <h4>MSc of Avionics and Systems</h4>
             <ul>For my master degree with a specialization in Avionics and Systems, some of the studied subjects included
                 <li>
@@ -178,6 +208,22 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/flappy_bird.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Teaching a computer to play Flappy Birds</h3>
+                        <p>
+                            Open-source project using reinforcement learning algorithms to teach an AI to play arcade games through trial and error. Implemented using Tensorflow & Keras, with Deep Deteministic Policy Gradient and Deep Q Networks algorithms.
+                        </p>
+                        <a href="https://github.com/GuilhermeGSousa/rl-flappy-bird">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/project.jpg" />
@@ -274,25 +320,6 @@
     </div>
     <!-- End #skills -->
 
-    <div id="contact">
-        <h2>Personal Assistant</h2>
-        <h3>Wish to contact me or have any questions? I'll let you talk to my AI assistant that will answer any questions you may have or send me any message you ask it to send me!</h3>
-        <div id="contact-form">
-            <div>
-                <input id="input" type="text">
-                <button type="button" id="answer" onclick="onClick()">Answer</button>
-                <textarea id="response" readonly>Hi! How may I help you?</textarea>
-                        <div id="contact-form">
-            <form method="POST" id="contact-form" action="https://formspree.io/guilherme.sousa1994@gmail.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="hidden" name="_replyto" id="reply">
-                <input type="hidden" name="message" id="message">
-            </form>
-        </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Personal Assistant -->
     <footer>
         <div class="container">
             <div class="row">
